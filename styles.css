@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: yellow;
+    padding: 15px;
+}
+
+.content {
+    margin: 20px;
+}
+
+form {
+    background: black;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    margin: auto;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+input {
+    border: 1px solid white;
+}
+
+button {
+    background: yellow;
+    font-weight: bold;
+    cursor: pointer;
+}
