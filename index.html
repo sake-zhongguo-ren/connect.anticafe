@@ -3,37 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Антикафе CONNECT | Бронирование</title>
+    <title>АНТИКАФЕ CONNECT | Алматы</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>АНТИКАФЕ CONNECT • АЛМАТЫ</h1>
         <p>Самое премиальное антикафе города</p>
+        <p>Теннис • PS5 • Бильярд • Ногобол</p>
+        <p>Алматы - Сейфулина 51/27</p>
+        <p>Хороший кофе • Уютная атмосфера</p>
     </header>
 
-    <section class="content">
-        <h2>Бронирование</h2>
-<form id="bookingForm">
-    <label for="name">Имя:</label>
-    <input type="text" id="name" required>
+    <section id="booking">
+        <h2>Забронировать место</h2>
+        <form id="bookingForm">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" required>
 
-    <label for="phone">Телефон:</label>
-    <input type="tel" id="phone" required>
+            <label for="phone">Номер телефона:</label>
+            <input type="tel" id="phone" required>
 
-    <label for="date">Дата:</label>
-    <input type="date" id="date" required>
+            <label for="date">Дата бронирования:</label>
+            <input type="date" id="date" required>
 
-    <label for="time">Время:</label>
-    <input type="time" id="time" required>
+            <label for="time">Время бронирования:</label>
+            <input type="time" id="time" required>
 
-    <label for="vip">VIP комната:</label>
-    <input type="checkbox" id="vip">
+            <label for="guests">Количество гостей:</label>
+            <input type="number" id="guests" min="1" max="10" required>
 
-    <button type="submit">Забронировать</button>
-</form>
+            <button type="submit">Забронировать</button>
+        </form>
+        <p id="statusMessage"></p>
+    </section>
 
-<script src="script.js"></script>
+    <footer>
+        <p>Контактный номер: <a href="tel:+77003335127">+7 700 333 51 27</a></p>
+        <p>Карта проезда: <a href="https://2gis.kz/almaty/geo/70000001029028095" target="_blank">Открыть в 2ГИС</a></p>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
