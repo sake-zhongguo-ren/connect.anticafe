@@ -1,5 +1,5 @@
-const token = "8037219129:AAGu_2IyPcQlOTeivrdVLDZr4vKedHSRqDo"; // Твой токен бота
-const chatId = "1332221607"; // Твой Telegram ID
+const token = "7773798065:AAGShKhV6Gz4PZHbVIrjD4qFR_0CrUlG-2Q"; // Замени на новый токен
+const chatId = "1332221607"; // Telegram ID
 
 document.getElementById("bookingForm").addEventListener("submit", function(event) {
     event.preventDefault();
@@ -32,12 +32,15 @@ function sendTelegramMessage(message) {
     .then(response => response.json())
     .then(result => {
         if (result.ok) {
-            document.getElementById("statusMessage").textContent = "Бронирование успешно отправлено!";
+            document.getElementById("statusMessage").textContent = "✅ Бронирование успешно отправлено!";
             document.getElementById("bookingForm").reset();
         } else {
-            document.getElementById("statusMessage").textContent = "Ошибка бронирования. Попробуйте снова.";
+            document.getElementById("statusMessage").textContent = "❌ Ошибка бронирования. Попробуйте снова.";
             console.error("Ошибка:", result);
         }
     })
-    .catch(error => console.error("Ошибка отправки:", error));
+    .catch(error => {
+        document.getElementById("statusMessage").textContent = "❌ Ошибка соединения.";
+        console.error("Ошибка отправки:", error);
+    });
 }
