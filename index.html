@@ -14,24 +14,26 @@
 
     <section class="content">
         <h2>Бронирование</h2>
-        <form id="booking-form">
-            <label for="name">Имя:</label>
-            <input type="text" id="name" required>
+<form id="bookingForm">
+    <label for="name">Имя:</label>
+    <input type="text" id="name" required>
 
-            <label for="phone">Телефон:</label>
-            <input type="tel" id="phone" required>
+    <label for="phone">Телефон:</label>
+    <input type="tel" id="phone" required>
 
-            <label for="date">Дата бронирования:</label>
-            <input type="date" id="date" required>
+    <label for="date">Дата:</label>
+    <input type="date" id="date" required>
 
-            <button type="submit">Забронировать</button>
-        </form>
-    </section>
+    <label for="time">Время:</label>
+    <input type="time" id="time" required>
 
-    <footer>
-        <p>Алматы - Сейфулина 51/27 | Тел: <a href="tel:+77003335127">+7 700 333 51 27</a></p>
-    </footer>
+    <label for="vip">VIP комната:</label>
+    <input type="checkbox" id="vip">
 
-    <script src="script.js"></script>
+    <button type="submit">Забронировать</button>
+</form>
+
+<script src="script.js"></script>
+
 </body>
 </html>
